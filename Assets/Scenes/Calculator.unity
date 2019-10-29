@@ -328,6 +328,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 450411514}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &136728313
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +605,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1732730766}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &290796538
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +825,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 2131924579}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &420795025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1123,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1303397050}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1565,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 420795027}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &796455686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1709,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 983644594}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &802390300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,6 +2084,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 8940715}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1020010488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,6 +2305,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1548524375}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1137814023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,6 +2449,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 994204849}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1176230499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2883,6 +2928,7 @@ GameObject:
   - component: {fileID: 1538341187}
   - component: {fileID: 1538341186}
   - component: {fileID: 1538341188}
+  - component: {fileID: 1538341189}
   m_Layer: 5
   m_Name: OutputPanel
   m_TagString: Untagged
@@ -2958,6 +3004,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 0}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
+--- !u!114 &1538341189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538341184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d74bb61c59dbaa428fdd085da04c2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnswerOutputText: {fileID: 802390302}
 --- !u!1 &1548524373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3174,6 +3238,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1176230501}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1657861702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3390,6 +3459,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1296276425}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1732730764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3636,7 +3710,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  button: {fileID: 802390302}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 1538341184}
 --- !u!1 &1806744563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,6 +3921,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1452965916}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1825896608
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,6 +4065,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 789486737}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1847740841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,6 +4209,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1657861704}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1858224230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,6 +4353,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 598636373}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1904471717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4398,6 +4497,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1470361739}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &1931938326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4537,6 +4641,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1218563231}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &2055556490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4587,7 +4696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.89411765}
+  m_Color: {r: 0, g: 0.7693863, b: 1, a: 0.89411765}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4748,6 +4857,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1020010490}
+  answer: 0
+  firstNum: 0
+  secondNum: 0
+  op: 
+  outputPanel: {fileID: 0}
 --- !u!1 &2131924577
 GameObject:
   m_ObjectHideFlags: 0
