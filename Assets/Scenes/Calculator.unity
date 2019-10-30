@@ -327,12 +327,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 450411514}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &136728313
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,12 +606,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1732730766}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &290796538
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,12 +828,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 2131924579}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &420795025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,12 +1128,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1303397050}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,12 +1572,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 420795027}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &796455686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,12 +1718,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 983644594}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &802390300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,12 +2095,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 8940715}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1020010488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,12 +2318,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1548524375}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1137814023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,12 +2464,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 994204849}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1176230499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2928,7 +2946,6 @@ GameObject:
   - component: {fileID: 1538341187}
   - component: {fileID: 1538341186}
   - component: {fileID: 1538341188}
-  - component: {fileID: 1538341189}
   m_Layer: 5
   m_Name: OutputPanel
   m_TagString: Untagged
@@ -3003,25 +3020,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
---- !u!114 &1538341189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538341184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d74bb61c59dbaa428fdd085da04c2b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AnswerOutputText: {fileID: 802390302}
+  rememberOp: 
 --- !u!1 &1548524373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3237,12 +3243,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1176230501}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1657861702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,12 +3466,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1296276425}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1732730764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3710,12 +3720,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 802390302}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 1538341184}
+  rememberOp: 
 --- !u!1 &1806744563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3920,12 +3932,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1452965916}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1825896608
 GameObject:
   m_ObjectHideFlags: 0
@@ -4064,12 +4078,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 789486737}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1847740841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4208,12 +4224,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1657861704}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1858224230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4352,12 +4370,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 598636373}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1904471717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4496,12 +4516,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1470361739}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &1931938326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4640,12 +4662,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1218563231}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &2055556490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,12 +4880,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1020010490}
+  output: {fileID: 0}
+  outputs: {fileID: 0}
   answer: 0
   firstNum: 0
   secondNum: 0
+  rememberSecondNum: 
   op: 
-  outputPanel: {fileID: 0}
+  rememberOp: 
 --- !u!1 &2131924577
 GameObject:
   m_ObjectHideFlags: 0
