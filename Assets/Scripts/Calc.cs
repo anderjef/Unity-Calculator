@@ -8,13 +8,13 @@ using UnityEngine.EventSystems;
 public class Calc : MonoBehaviour
 {
     public Text output;
-    public Text number1;
-    public Text number2;
+    public Text number1Variable;
+    public Text number2Variable;
     public Text rememberNumVariable;
     public Text opVariable;
     public Text rememberOpVariable;
     //public string answer = "0";
-    //public string firstNum = "", secondNum = "", rememberSecondNum = ""; //the empty string represents a zero or otherwise it would be harder to determine if a second number has actually been input in the case that the user inputs a first number then hits an operator and then the enter/submit/equals button; secondNum should never be zero unless the user explicitly assigns it zero
+    //public string firstNum = "", secondNum = "", rememberSecondNum = "";
     //public string op = "", rememberOp = ""; //operators
     public string input;
     public float timer = 0.0f;
@@ -23,14 +23,14 @@ public class Calc : MonoBehaviour
     public void Start()
     {
         output = GameObject.Find("OutputText").GetComponentInChildren<Text>();
-        number1= GameObject.Find("number1Variable").GetComponentInChildren<Text>();
-        number2 = GameObject.Find("number2Variable").GetComponentInChildren<Text>();
+        number1Variable= GameObject.Find("number1Variable").GetComponentInChildren<Text>();
+        number2Variable = GameObject.Find("number2Variable").GetComponentInChildren<Text>();
         rememberNumVariable = GameObject.Find("rememberNumVariable").GetComponentInChildren<Text>();
         opVariable = GameObject.Find("opVariable").GetComponentInChildren<Text>();
         rememberOpVariable = GameObject.Find("rememberOpVariable").GetComponentInChildren<Text>();
         output.text = "0";
-        number1.text = "";
-        number2.text = "";
+        number1Variable.text = "";
+        number2Variable.text = "";
         rememberNumVariable.text = "";
         opVariable.text = "";
         rememberOpVariable.text = "";
@@ -65,34 +65,34 @@ public class Calc : MonoBehaviour
         }
         //string buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
         string answer = output.text;
-        string firstNum = number1.text;
-        string secondNum = number2.text;
-        string rememberSecondNum = rememberNumVariable.text;
+        string number1 = number1.text;
+        string number2 = number2Variable.text; //the empty string represents a zero or otherwise it would be harder to determine if a second number has actually been input in the case that the user inputs a first number then hits an operator and then the enter/submit/equals button; secondNum should never be zero unless the user explicitly assigns it zero
+        string rememberNum = rememberNumVariable.text;
         string op = opVariable.text;
         string rememberOp = rememberOpVariable.text;
         if (buttonText == "ENTER") //could turn this into a larger switch statement but that could lead to less readability
         {
-            if (secondNum != "")
+            if (number2 != "")
             {
                 switch (op)
                 {
                     case "+":
-                        answer = (Convert.ToDouble(firstNum) + Convert.ToDouble(secondNum)).ToString();
+                        answer = (Convert.ToDouble(number1) + Convert.ToDouble(number2)).ToString();
                         break;
                     case "-":
-                        answer = (Convert.ToDouble(firstNum) - Convert.ToDouble(secondNum)).ToString();
+                        answer = (Convert.ToDouble(number1) - Convert.ToDouble(number2)).ToString();
                         break;
                     case "x":
-                        answer = (Convert.ToDouble(firstNum) * Convert.ToDouble(secondNum)).ToString();
+                        answer = (Convert.ToDouble(number1) * Convert.ToDouble(number2)).ToString();
                         break;
                     case "/":
-                        answer = (Convert.ToDouble(firstNum) / Convert.ToDouble(secondNum)).ToString();
+                        answer = (Convert.ToDouble(number1) / Convert.ToDouble(number2)).ToString();
                         break;
                 }
                 rememberOp = op; //in case the user wants to continue performing the same operation on the new output value
-                rememberSecondNum = secondNum; //in case the user wants to continue performing the same operation on the new output value
+                rememberNum = number2; //in case the user wants to continue performing the same operation on the new output value
                 op = ""; //op gets no value after an expression is evaluated
-                secondNum = ""; //secondNum gets no value after an expression is evaluated
+                number2 = ""; //secondNum gets no value after an expression is evaluated
             }
             else //no second number input
             {
@@ -103,25 +103,25 @@ public class Calc : MonoBehaviour
                         switch (rememberOp)
                         {
                             case "+":
-                                answer = (Convert.ToDouble(firstNum) + Convert.ToDouble(rememberSecondNum)).ToString();
+                                answer = (Convert.ToDouble(number1) + Convert.ToDouble(rememberNum)).ToString();
                                 break;
                             case "-":
-                                answer = (Convert.ToDouble(firstNum) - Convert.ToDouble(rememberSecondNum)).ToString();
+                                answer = (Convert.ToDouble(number1) - Convert.ToDouble(rememberNum)).ToString();
                                 break;
                             case "x":
-                                answer = (Convert.ToDouble(firstNum) * Convert.ToDouble(rememberSecondNum)).ToString();
+                                answer = (Convert.ToDouble(number1) * Convert.ToDouble(rememberNum)).ToString();
                                 break;
                             case "/":
-                                answer = (Convert.ToDouble(firstNum) / Convert.ToDouble(rememberSecondNum)).ToString();
+                                answer = (Convert.ToDouble(number1) / Convert.ToDouble(rememberNum)).ToString();
                                 break;
                             case "+/-":
-                                answer = (Convert.ToDouble(firstNum) * -1).ToString();
+                                answer = (Convert.ToDouble(number1) * -1).ToString();
                                 break;
                         }
                     }
                     else
                     {
-                        answer = firstNum; //no operator was ever input, so just return the first input number
+                        answer = number1; //no operator was ever input, so just return the first input number
                     }
                 }
                 else
@@ -129,24 +129,24 @@ public class Calc : MonoBehaviour
                     switch (op)
                     {
                         case "+":
-                            answer = (Convert.ToDouble(firstNum) + Convert.ToDouble(firstNum)).ToString(); //aka 2*firstNum
+                            answer = (Convert.ToDouble(number1) + Convert.ToDouble(number1)).ToString(); //aka 2*firstNum
                             break;
                         case "-":
-                            answer = (Convert.ToDouble(firstNum) - Convert.ToDouble(firstNum)).ToString(); //aka 0
+                            answer = (Convert.ToDouble(number1) - Convert.ToDouble(number1)).ToString(); //aka 0
                             break;
                         case "x":
-                            answer = (Convert.ToDouble(firstNum) * Convert.ToDouble(firstNum)).ToString();
+                            answer = (Convert.ToDouble(number1) * Convert.ToDouble(number1)).ToString();
                             break;
                         case "/":
-                            answer = (Convert.ToDouble(firstNum) / Convert.ToDouble(firstNum)).ToString(); //aka 1
+                            answer = (Convert.ToDouble(number1) / Convert.ToDouble(number1)).ToString(); //aka 1
                             break;
                         case "+/-":
-                            answer = (Convert.ToDouble(firstNum) * -1).ToString();
+                            answer = (Convert.ToDouble(number1) * -1).ToString();
                             break;
                     }
-                    firstNum = answer;
+                    number1 = answer;
                     rememberOp = op;
-                    rememberSecondNum = firstNum; //unique instance of actually remembering the first number input instead of the second
+                    rememberNum = number1; //unique instance of actually remembering the first number input instead of the second
                     op = ""; //op gets no value after an expression is evaluated
                 }
             }
@@ -154,9 +154,9 @@ public class Calc : MonoBehaviour
         else if (buttonText == "DELETE") //aka clear everything
         {
             answer = "0";
-            firstNum = "";
-            secondNum = "";
-            rememberSecondNum = "";
+            number1 = "";
+            number2 = "";
+            rememberNum = "";
             op = "";
             rememberOp = "";
         }
@@ -173,38 +173,38 @@ public class Calc : MonoBehaviour
                 case "x":
                 case "/":
                 case "+/-":
-                    if (firstNum == "") //must initialize firstNum if the user didn't
+                    if (number1 == "") //must initialize firstNum if the user didn't
                     {
-                        firstNum = "0";
+                        number1 = "0";
                     }
-                    if (secondNum != "") //must evaluate previous expression first; op has a value if secondNum does (and that value is not "+/-")
+                    if (number2 != "") //must evaluate previous expression first; op has a value if secondNum does (and that value is not "+/-")
                     {
                         switch (op)
                         {
                             case "+":
-                                answer = (Convert.ToDouble(firstNum) + Convert.ToDouble(secondNum)).ToString();
+                                answer = (Convert.ToDouble(number1) + Convert.ToDouble(number2)).ToString();
                                 break;
                             case "-":
-                                answer = (Convert.ToDouble(firstNum) - Convert.ToDouble(secondNum)).ToString();
+                                answer = (Convert.ToDouble(number1) - Convert.ToDouble(number2)).ToString();
                                 break;
                             case "x":
-                                answer = (Convert.ToDouble(firstNum) * Convert.ToDouble(secondNum)).ToString();
+                                answer = (Convert.ToDouble(number1) * Convert.ToDouble(number2)).ToString();
                                 break;
                             case "/":
-                                answer = (Convert.ToDouble(firstNum) / Convert.ToDouble(secondNum)).ToString();
+                                answer = (Convert.ToDouble(number1) / Convert.ToDouble(number2)).ToString();
                                 break;
                         }
-                        firstNum = answer; //in case the user immediately presses a new operator
-                        rememberSecondNum = secondNum;
+                        number1 = answer; //in case the user immediately presses a new operator
+                        rememberNum = number2;
                         rememberOp = op;
                         op = ""; //operator gets no value after an expression is evaluated (doesn't really matter as op is about to be assigned the value of the last button pressed)
                     }
                     if (buttonText == "+/-") //immediately resolve operation as only one input number is required
                     {
-                        answer = (Convert.ToDouble(firstNum) * -1).ToString();
+                        answer = (Convert.ToDouble(number1) * -1).ToString();
                         rememberOp = op;
                         op = ""; //operator gets no value after an expression is evaluated
-                        rememberSecondNum = secondNum; //secondNum should be an empty string by this point
+                        rememberNum = number2; //secondNum should be an empty string by this point
                         break;
                     }
                     op = buttonText;
@@ -212,53 +212,53 @@ public class Calc : MonoBehaviour
                 case ".":
                     if (op == "")
                     {
-                        if (firstNum == "")
+                        if (number1 == "")
                         {
-                            firstNum += "0"; //can't forget leading zero
+                            number1 += "0"; //can't forget leading zero
                         }
-                        else if (firstNum.Contains(".")) //can't have two decimals in the same number
+                        else if (number1.Contains(".")) //can't have two decimals in the same number
                         {
-                            answer = firstNum;
+                            answer = number1;
                             break;
                         }
-                        firstNum += buttonText;
-                        answer = firstNum;
+                        number1 += buttonText;
+                        answer = number1;
                     }
                     else //an operator was selected, so new numbers refer to the second number input
                     {
-                        if (secondNum == "")
+                        if (number2 == "")
                         {
-                            secondNum += "0"; //can't forget leading zero
+                            number2 += "0"; //can't forget leading zero
                         }
-                        else if (secondNum.Contains(".")) //can't have two decimals in the same number
+                        else if (number2.Contains(".")) //can't have two decimals in the same number
                         {
-                            answer = secondNum;
+                            answer = number2;
                             break;
                         }
-                        secondNum += buttonText;
-                        answer = secondNum;
+                        number2 += buttonText;
+                        answer = number2;
                     }
                     break;
                 case "0":
                     if (op == "")
                     {
-                        if (firstNum == "0" && buttonText == "0") //redundant zero clicked by the user
+                        if (number1 == "0" && buttonText == "0") //redundant zero clicked by the user
                         {
-                            answer = firstNum; //should be unnecessary
+                            answer = number1; //should be unnecessary
                             break;
                         }
-                        firstNum += buttonText;
-                        answer = firstNum;
+                        number1 += buttonText;
+                        answer = number1;
                     }
                     else //an operator was selected, so new numbers refer to the second number input
                     {
-                        if (secondNum == "0" && buttonText == "0") //redundant zero clicked by the user
+                        if (number2 == "0" && buttonText == "0") //redundant zero clicked by the user
                         {
-                            answer = secondNum; //should be unnecessary
+                            answer = number2; //should be unnecessary
                             break;
                         }
-                        secondNum += buttonText;
-                        answer = secondNum;
+                        number2 += buttonText;
+                        answer = number2;
                     }
                     break;
                 //could replace all the following with simply default case or could reserve default case for error checking
@@ -273,27 +273,27 @@ public class Calc : MonoBehaviour
                 case "9":
                     if (op == "")
                     {
-                        if (firstNum == "0")
+                        if (number1 == "0")
                         {
-                            firstNum = buttonText;
+                            number1 = buttonText;
                         }
                         else
                         {
-                            firstNum += buttonText;
+                            number1 += buttonText;
                         }
-                        answer = firstNum;
+                        answer = number1;
                     }
                     else //an operator was selected, so new numbers refer to the second number input
                     {
-                        if (secondNum == "0")
+                        if (number2 == "0")
                         {
-                            secondNum = buttonText;
+                            number2 = buttonText;
                         }
                         else
                         {
-                            secondNum += buttonText;
+                            number2 += buttonText;
                         }
-                        answer = secondNum;
+                        answer = number2;
                     }
                     break;
             }
@@ -301,9 +301,9 @@ public class Calc : MonoBehaviour
 
         Debug.Log(answer);
         output.text = answer;
-        number1.text = firstNum;
-        number2.text = secondNum;
-        rememberNumVariable.text = rememberSecondNum;
+        this.number1Variable.text = number1;
+        number2Variable.text = number2;
+        rememberNumVariable.text = rememberNum;
         opVariable.text = op;
         rememberOpVariable.text = rememberOp;
     }
