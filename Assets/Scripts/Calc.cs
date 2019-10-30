@@ -13,11 +13,21 @@ public class Calc : MonoBehaviour
     double number1;
     double number2;
     char operation = ' ';
+    private bool mouse_over = false;
+
+    Color m_MouseOverColor = Color.red;
+    Color m_OriginalColor;
+    public Renderer rend;
 
     // Start is called before the first frame update
     void Start()
     {
+        //button.colors = cb;
         Debug.Log("Test");
+
+        //Fetch the original color of the GameObject
+        m_OriginalColor = rend.material.color;
+
     }
 
     public void onClick(){
@@ -101,4 +111,45 @@ public class Calc : MonoBehaviour
         }
         output.text = answer;
     }
+    public void PointerEnter()
+    {
+        rend = GetComponent<Renderer>();
+        mouse_over = true;
+        Debug.Log("Mouse enter");
+        rend.material.color = Color.red;
+        Update();
+    }
+
+    public void PointerExit()
+    {
+        rend = GetComponent<Renderer>();
+        mouse_over = false;
+        Debug.Log("Mouse exit");
+        rend.material.color = Color.white;
+        Update();
+    }
+
+    public void Update()
+    {
+        if (mouse_over)
+        {
+            rend = GetComponent<Renderer>();
+            //onClick();
+            rend.material.color -= new Color(0.1F, 0, 0) * Time.deltaTime;
+            Debug.Log("Mouse Over");
+        }
+    }
+
+    //void OnMouseOver()
+    //{
+        // Change the color of the GameObject to red when the mouse is over GameObject
+        //m_Renderer.material.color = m_MouseOverColor;
+    //}
+
+    //void OnMouseExit()
+    //{
+        // Reset the color of the GameObject back to normal
+    //}
+
+
 }
