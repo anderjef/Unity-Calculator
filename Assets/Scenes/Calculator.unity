@@ -328,11 +328,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &130624959
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,7 +349,7 @@ GameObject:
   - component: {fileID: 130624962}
   - component: {fileID: 130624961}
   m_Layer: 5
-  m_Name: secondNumVariable
+  m_Name: number2Variable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -759,11 +763,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &290796538
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +860,7 @@ GameObject:
   - component: {fileID: 318920714}
   - component: {fileID: 318920713}
   m_Layer: 5
-  m_Name: rememberSecondNumVariable
+  m_Name: rememberNumVariable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1056,11 +1064,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &420795025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,11 +1366,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,11 +1812,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 2111185459}
-  secondNumVariable: {fileID: 130624961}
-  rememberSecondNumVariable: {fileID: 318920713}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
   opVariable: {fileID: 1397610030}
   rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &796455686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,11 +1960,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &802390300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,11 +2339,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1020010488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,11 +2564,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1137814023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,11 +2712,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1176230499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3311,11 +3347,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
+  number1: {fileID: 0}
+  number2: {fileID: 0}
+  rememberNumVariable: {fileID: 0}
   opVariable: {fileID: 0}
   rememberOpVariable: {fileID: 0}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1548524373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,11 +3572,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1657861702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3753,11 +3797,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1732730764
 GameObject:
   m_ObjectHideFlags: 0
@@ -4010,11 +4058,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1806744563
 GameObject:
   m_ObjectHideFlags: 0
@@ -4220,11 +4272,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1825896608
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,11 +4420,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1847740841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4508,11 +4568,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1858224230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4652,11 +4716,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1904471717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4796,11 +4864,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1931938326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4940,11 +5012,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &2055556490
 GameObject:
   m_ObjectHideFlags: 0
@@ -5156,11 +5232,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  firstNumVariable: {fileID: 0}
-  secondNumVariable: {fileID: 0}
-  rememberSecondNumVariable: {fileID: 0}
-  opVariable: {fileID: 0}
-  rememberOpVariable: {fileID: 0}
+  number1: {fileID: 2111185459}
+  number2: {fileID: 130624961}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &2111185457
 GameObject:
   m_ObjectHideFlags: 0
@@ -5173,7 +5253,7 @@ GameObject:
   - component: {fileID: 2111185460}
   - component: {fileID: 2111185459}
   m_Layer: 5
-  m_Name: firstNumVariable
+  m_Name: number1Variable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

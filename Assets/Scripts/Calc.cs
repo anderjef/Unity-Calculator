@@ -311,7 +311,7 @@ public class Calc : MonoBehaviour
     public void MouseEnter(BaseEventData eventData)
     {
         input = name;
-        Debug.Log("Mouse is over GameObject " + name);
+        //Debug.Log("Mouse is over GameObject " + name);
         timer = 0.0f;
         hovering = true;
     }
@@ -319,6 +319,6 @@ public class Calc : MonoBehaviour
     public void MouseExit(BaseEventData eventData)
     {
         hovering = false;
-        Debug.Log("Mouse is exiting GameObject.");
+        //Debug.Log("Mouse is exiting GameObject.");
     }
 }
