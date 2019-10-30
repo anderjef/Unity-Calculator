@@ -43,7 +43,7 @@ public class Calc : MonoBehaviour
             timer += Time.deltaTime;
             if (timer > 2.0)
             {
-                Debug.Log("CLICK");
+                //Debug.Log("CLICK");
                 timer = 0.0f;
                 add = true;
                 onClick();
@@ -65,7 +65,7 @@ public class Calc : MonoBehaviour
         }
         //string buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
         string answer = output.text;
-        string number1 = number1.text;
+        string number1 = number1Variable.text;
         string number2 = number2Variable.text; //the empty string represents a zero or otherwise it would be harder to determine if a second number has actually been input in the case that the user inputs a first number then hits an operator and then the enter/submit/equals button; secondNum should never be zero unless the user explicitly assigns it zero
         string rememberNum = rememberNumVariable.text;
         string op = opVariable.text;
