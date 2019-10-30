@@ -13,9 +13,6 @@ public class Calc : MonoBehaviour
     public Text rememberNumVariable;
     public Text opVariable;
     public Text rememberOpVariable;
-    //public string answer = "0";
-    //public string firstNum = "", secondNum = "", rememberSecondNum = "";
-    //public string op = "", rememberOp = ""; //operators
     public string input;
     public float timer = 0.0f;
     public bool hovering = false, add = false;
@@ -41,7 +38,7 @@ public class Calc : MonoBehaviour
         if (hovering)
         {
             timer += Time.deltaTime;
-            if (timer > 2.0)
+            if (timer > 1.0)
             {
                 //Debug.Log("CLICK");
                 timer = 0.0f;
@@ -61,6 +58,7 @@ public class Calc : MonoBehaviour
         }
         else
         {
+            timer = 0.0f;
             buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
         }
         //string buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
@@ -118,6 +116,7 @@ public class Calc : MonoBehaviour
                                 answer = (Convert.ToDouble(number1) * -1).ToString();
                                 break;
                         }
+                        number1 = answer; //update the first input number
                     }
                     else
                     {
@@ -151,7 +150,7 @@ public class Calc : MonoBehaviour
                 }
             }
         }
-        else if (buttonText == "DELETE") //aka clear everything
+        else if (buttonText == "CLEAR") //aka clear everything
         {
             answer = "0";
             number1 = "";
@@ -197,11 +196,13 @@ public class Calc : MonoBehaviour
                         number1 = answer; //in case the user immediately presses a new operator
                         rememberNum = number2;
                         rememberOp = op;
+                        number2 = "";
                         op = ""; //operator gets no value after an expression is evaluated (doesn't really matter as op is about to be assigned the value of the last button pressed)
                     }
                     if (buttonText == "+/-") //immediately resolve operation as only one input number is required
                     {
                         answer = (Convert.ToDouble(number1) * -1).ToString();
+                        number1 = answer; //update first input number
                         rememberOp = op;
                         op = ""; //operator gets no value after an expression is evaluated
                         rememberNum = number2; //secondNum should be an empty string by this point
