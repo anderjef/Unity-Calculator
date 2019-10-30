@@ -202,8 +202,9 @@ GameObject:
   - component: {fileID: 28453946}
   - component: {fileID: 28453945}
   - component: {fileID: 28453948}
+  - component: {fileID: 28453949}
   m_Layer: 5
-  m_Name: Button3
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,7 +328,137 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 450411514}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &28453949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28453943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 28453948}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 28453948}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
+--- !u!1 &130624959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130624960}
+  - component: {fileID: 130624962}
+  - component: {fileID: 130624961}
+  m_Layer: 5
+  m_Name: number2Variable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &130624960
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130624959}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
+  m_Children: []
+  m_Father: {fileID: 1777983801}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -66.6, y: -11.5}
+  m_SizeDelta: {x: 87.2, y: 2.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &130624961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130624959}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.08050018, g: 0.6320754, b: 0.1699938, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 36
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &130624962
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130624959}
+  m_CullTransparentMesh: 0
 --- !u!1 &136728313
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +592,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &162766180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 162766181}
+  - component: {fileID: 162766183}
+  - component: {fileID: 162766182}
+  m_Layer: 5
+  m_Name: rememberOpVariable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &162766181
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162766180}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
+  m_Children: []
+  m_Father: {fileID: 1777983801}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -66.6, y: -11.5}
+  m_SizeDelta: {x: 87.2, y: 2.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &162766182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162766180}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.08050018, g: 0.6320754, b: 0.1699938, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 36
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &162766183
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162766180}
+  m_CullTransparentMesh: 0
 --- !u!1 &225119970
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,8 +682,9 @@ GameObject:
   - component: {fileID: 225119973}
   - component: {fileID: 225119972}
   - component: {fileID: 225119975}
+  - component: {fileID: 225119976}
   m_Layer: 5
-  m_Name: SubtractButton
+  m_Name: '-'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -599,7 +808,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1732730766}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &225119976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225119970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 225119975}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 225119975}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &290796538
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,6 +938,83 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 4
+--- !u!1 &318920711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 318920712}
+  - component: {fileID: 318920714}
+  - component: {fileID: 318920713}
+  m_Layer: 5
+  m_Name: rememberNumVariable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &318920712
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318920711}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
+  m_Children: []
+  m_Father: {fileID: 1777983801}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -66.6, y: -11.5}
+  m_SizeDelta: {x: 87.2, y: 2.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &318920713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318920711}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.08050018, g: 0.6320754, b: 0.1699938, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 36
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &318920714
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318920711}
+  m_CullTransparentMesh: 0
 --- !u!1 &359196205
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,8 +1028,9 @@ GameObject:
   - component: {fileID: 359196208}
   - component: {fileID: 359196207}
   - component: {fileID: 359196210}
+  - component: {fileID: 359196211}
   m_Layer: 5
-  m_Name: PosNegButton
+  m_Name: +/-
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -814,7 +1154,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 2131924579}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &359196211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359196205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 359196210}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 359196210}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &420795025
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,8 +1375,9 @@ GameObject:
   - component: {fileID: 452612126}
   - component: {fileID: 452612125}
   - component: {fileID: 452612128}
+  - component: {fileID: 452612129}
   m_Layer: 5
-  m_Name: Button8
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1107,7 +1501,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1303397050}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &452612129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452612123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 452612128}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 452612128}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,8 +1866,9 @@ GameObject:
   - component: {fileID: 791397215}
   - component: {fileID: 791397214}
   - component: {fileID: 791397218}
+  - component: {fileID: 791397217}
   m_Layer: 5
-  m_Name: Button7
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1532,6 +1980,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791397212}
   m_CullTransparentMesh: 0
+--- !u!114 &791397217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791397212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 791397218}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 791397218}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!114 &791397218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1544,7 +2036,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 420795027}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &796455686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,8 +2059,9 @@ GameObject:
   - component: {fileID: 796455689}
   - component: {fileID: 796455688}
   - component: {fileID: 796455691}
+  - component: {fileID: 796455692}
   m_Layer: 5
-  m_Name: Button1
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1625,12 +2127,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 796455686}
-        m_MethodName: 
+      - m_Target: {fileID: 796455691}
+        m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1683,7 +2185,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 983644594}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &796455692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796455686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 796455691}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 796455691}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &802390300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,7 +2251,7 @@ GameObject:
   - component: {fileID: 802390303}
   - component: {fileID: 802390302}
   m_Layer: 5
-  m_Name: Text
+  m_Name: OutputText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1928,8 +2483,9 @@ GameObject:
   - component: {fileID: 1011003511}
   - component: {fileID: 1011003510}
   - component: {fileID: 1011003513}
+  - component: {fileID: 1011003514}
   m_Layer: 5
-  m_Name: Button2
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2053,7 +2609,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 8940715}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1011003514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011003508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1011003513}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1011003513}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1020010488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2122,7 +2731,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DELETE
+  m_Text: CLEAR
 --- !u!222 &1020010491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2144,8 +2753,9 @@ GameObject:
   - component: {fileID: 1032455919}
   - component: {fileID: 1032455918}
   - component: {fileID: 1032455921}
+  - component: {fileID: 1032455922}
   m_Layer: 5
-  m_Name: DivideButton
+  m_Name: /
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2269,7 +2879,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1548524375}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1032455922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032455916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1032455921}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1032455921}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1137814023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,8 +2946,9 @@ GameObject:
   - component: {fileID: 1137814026}
   - component: {fileID: 1137814025}
   - component: {fileID: 1137814028}
+  - component: {fileID: 1137814029}
   m_Layer: 5
-  m_Name: Button0
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2408,7 +3072,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 994204849}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1137814029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137814023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1137814028}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1137814028}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1176230499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,6 +3434,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303397048}
   m_CullTransparentMesh: 0
+--- !u!1 &1397610028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1397610029}
+  - component: {fileID: 1397610031}
+  - component: {fileID: 1397610030}
+  m_Layer: 5
+  m_Name: opVariable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1397610029
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397610028}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
+  m_Children: []
+  m_Father: {fileID: 1777983801}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -66.6, y: -11.5}
+  m_SizeDelta: {x: 87.2, y: 2.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1397610030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397610028}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.08050018, g: 0.6320754, b: 0.1699938, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 36
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1397610031
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397610028}
+  m_CullTransparentMesh: 0
 --- !u!1 &1452965914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,7 +3751,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 0}
+  opVariable: {fileID: 0}
+  rememberOpVariable: {fileID: 0}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1548524373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3048,8 +3851,9 @@ GameObject:
   - component: {fileID: 1627799234}
   - component: {fileID: 1627799233}
   - component: {fileID: 1627799236}
+  - component: {fileID: 1627799237}
   m_Layer: 5
-  m_Name: AddButton
+  m_Name: +
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3173,7 +3977,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1176230501}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1627799237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627799231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1627799236}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1627799236}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1657861702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,8 +4121,9 @@ GameObject:
   - component: {fileID: 1729636247}
   - component: {fileID: 1729636246}
   - component: {fileID: 1729636249}
+  - component: {fileID: 1729636250}
   m_Layer: 5
-  m_Name: MultiplyButton
+  m_Name: x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3389,7 +4247,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1296276425}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1729636250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729636244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1729636249}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1729636249}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1732730764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3498,6 +4409,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 802390301}
+  - {fileID: 2111185458}
+  - {fileID: 130624960}
+  - {fileID: 318920712}
+  - {fileID: 1397610029}
+  - {fileID: 162766181}
   m_Father: {fileID: 1538341185}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3524,7 +4440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Output Here
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 8b29aaa3eec7468097ff07adfcf29ac9, type: 2}
@@ -3636,7 +4552,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
 --- !u!1 &1806744563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,8 +4641,9 @@ GameObject:
   - component: {fileID: 1818842514}
   - component: {fileID: 1818842513}
   - component: {fileID: 1818842516}
+  - component: {fileID: 1818842517}
   m_Layer: 5
-  m_Name: EnterButton
+  m_Name: ENTER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3841,7 +4767,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1452965916}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1818842517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818842511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1818842516}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1818842516}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1825896608
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,8 +4834,9 @@ GameObject:
   - component: {fileID: 1825896611}
   - component: {fileID: 1825896610}
   - component: {fileID: 1825896613}
+  - component: {fileID: 1825896614}
   m_Layer: 5
-  m_Name: Button4
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3980,7 +4960,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 789486737}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1825896614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825896608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1825896613}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1825896613}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1847740841
 GameObject:
   m_ObjectHideFlags: 0
@@ -3994,8 +5027,9 @@ GameObject:
   - component: {fileID: 1847740844}
   - component: {fileID: 1847740843}
   - component: {fileID: 1847740846}
+  - component: {fileID: 1847740847}
   m_Layer: 5
-  m_Name: Button5
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4119,7 +5153,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1657861704}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1847740847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847740841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1847740846}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1847740846}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1858224230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4133,8 +5220,9 @@ GameObject:
   - component: {fileID: 1858224233}
   - component: {fileID: 1858224232}
   - component: {fileID: 1858224235}
+  - component: {fileID: 1858224236}
   m_Layer: 5
-  m_Name: DecimalButton
+  m_Name: .
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4258,7 +5346,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 598636373}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1858224236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858224230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1858224235}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1858224235}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1904471717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4272,8 +5413,9 @@ GameObject:
   - component: {fileID: 1904471720}
   - component: {fileID: 1904471719}
   - component: {fileID: 1904471722}
+  - component: {fileID: 1904471723}
   m_Layer: 5
-  m_Name: Button6
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4397,7 +5539,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1470361739}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1904471723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904471717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1904471722}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1904471722}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &1931938326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4411,8 +5606,9 @@ GameObject:
   - component: {fileID: 1931938329}
   - component: {fileID: 1931938328}
   - component: {fileID: 1931938331}
+  - component: {fileID: 1931938332}
   m_Layer: 5
-  m_Name: Button9
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4536,7 +5732,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1218563231}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &1931938332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931938326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1931938331}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1931938331}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
 --- !u!1 &2055556490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4587,7 +5836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.89411765}
+  m_Color: {r: 0, g: 0.7693863, b: 1, a: 0.89411765}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4622,8 +5871,9 @@ GameObject:
   - component: {fileID: 2099478700}
   - component: {fileID: 2099478699}
   - component: {fileID: 2099478702}
+  - component: {fileID: 2099478703}
   m_Layer: 5
-  m_Name: DeleteButton
+  m_Name: CLEAR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4747,7 +5997,137 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af4b27e72e28446b4b0e75c6a5b94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1020010490}
+  output: {fileID: 802390302}
+  number1Variable: {fileID: 0}
+  number2Variable: {fileID: 0}
+  rememberNumVariable: {fileID: 318920713}
+  opVariable: {fileID: 1397610030}
+  rememberOpVariable: {fileID: 162766182}
+  input: 
+  timer: 0
+  hovering: 0
+  add: 0
+--- !u!114 &2099478703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099478697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2099478702}
+          m_MethodName: MouseEnter
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2099478702}
+          m_MethodName: MouseExit
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  delegates: []
+--- !u!1 &2111185457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2111185458}
+  - component: {fileID: 2111185460}
+  - component: {fileID: 2111185459}
+  m_Layer: 5
+  m_Name: number1Variable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2111185458
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111185457}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
+  m_Children: []
+  m_Father: {fileID: 1777983801}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -66.6, y: -11.5}
+  m_SizeDelta: {x: 87.2, y: 2.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2111185459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111185457}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.08050018, g: 0.6320754, b: 0.1699938, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 36
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 64
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &2111185460
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111185457}
+  m_CullTransparentMesh: 0
 --- !u!1 &2131924577
 GameObject:
   m_ObjectHideFlags: 0
