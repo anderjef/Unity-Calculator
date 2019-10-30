@@ -8,21 +8,45 @@ using UnityEngine.UI;
 public class Calc : MonoBehaviour
 {
     public Text output;
-    string answer;
+    string answer, input;
     int operationCount = 0;
     double number1;
     double number2;
     char operation = ' ';
+    float timer = 0.0f;
+    bool hovering = false, add = false;
 
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Test");
     }
-
+    void Update()
+    {
+        if (hovering)
+        {
+            timer += Time.deltaTime;
+            if (timer > 2.0)
+            {
+                Debug.Log("CLICK");
+                timer = 0.0f;
+                add = true;
+                onClick();
+                add = false;
+            }
+        }
+    }
     public void onClick(){
         //Debug.Log(EventSystem.current.currentSelectedGameObject.name);
-        string value = EventSystem.current.currentSelectedGameObject.name;
+        string value;
+        if (add)
+        {
+            value = input;
+        }
+        else
+        {
+            value = EventSystem.current.currentSelectedGameObject.name;
+        }
         if (value.Contains("DELETE"))
         {
             answer = "";
@@ -100,5 +124,17 @@ public class Calc : MonoBehaviour
             answer += value;
         }
         output.text = answer;
+    }
+    public void MouseEnter(BaseEventData eventData)
+    {
+        input = name;
+        Debug.Log("Mouse is over GameObject "+ name);
+        timer = 0.0f;
+        hovering = true;
+    }
+    public void MouseExit(BaseEventData eventData)
+    {
+        hovering = false;
+        Debug.Log("Mouse is exiting GameObject.");
     }
 }
