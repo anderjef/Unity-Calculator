@@ -8,13 +8,34 @@ using UnityEngine.EventSystems;
 public class Calc : MonoBehaviour
 {
     public Text output;
-    public string answer = "0";
-    public string firstNum = "", secondNum = "", rememberSecondNum = ""; //the empty string represents a zero or otherwise it would be harder to determine if a second number has actually been input in the case that the user inputs a first number then hits an operator and then the enter/submit/equals button; secondNum should never be zero unless the user explicitly assigns it zero
-    public string op = "", rememberOp = ""; //operators
+    public Text answerVariable;
+    public Text firstNumVariable;
+    public Text secondNumVariable;
+    public Text rememberSecondNumVariable;
+    public Text opVariable;
+    public Text rememberOpVariable;
+    //public string answer = "0";
+    //public string firstNum = "", secondNum = "", rememberSecondNum = ""; //the empty string represents a zero or otherwise it would be harder to determine if a second number has actually been input in the case that the user inputs a first number then hits an operator and then the enter/submit/equals button; secondNum should never be zero unless the user explicitly assigns it zero
+    //public string op = "", rememberOp = ""; //operators
 
+    public void Start()
+    {
+        answerVariable.text = "0";
+        firstNumVariable.text = "";
+        secondNumVariable.text = "";
+        rememberSecondNumVariable.text = "";
+        opVariable.text = "";
+        rememberOpVariable.text = "";
+    }
     public void onClick()
     {
         string buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
+        string answer = answerVariable.text;
+        string firstNum = firstNumVariable.text;
+        string secondNum = secondNumVariable.text;
+        string rememberSecondNum = rememberSecondNumVariable.text;
+        string op = opVariable.text;
+        string rememberOp = rememberOpVariable.text;
         if (buttonText == "ENTER") //could turn this into a larger switch statement but that could lead to less readability
         {
             if (secondNum != "")
