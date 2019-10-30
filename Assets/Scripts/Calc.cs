@@ -7,18 +7,13 @@ using UnityEngine.EventSystems;
 
 public class Calc : MonoBehaviour
 {
-    //public Button output;
-    //public Text outputs;
+    public Text output;
     public string answer = "0";
     public string firstNum = "", secondNum = "", rememberSecondNum = ""; //the empty string represents a zero or otherwise it would be harder to determine if a second number has actually been input in the case that the user inputs a first number then hits an operator and then the enter/submit/equals button; secondNum should never be zero unless the user explicitly assigns it zero
     public string op = "", rememberOp = ""; //operators
 
     public void onClick()
     {
-        //output = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
-        //Debug.Log(output);
-        //string outputs = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
-        //Debug.Log(outputs);
         string buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
         if (buttonText == "ENTER") //could turn this into a larger switch statement but that could lead to less readability
         {
@@ -157,26 +152,56 @@ public class Calc : MonoBehaviour
                     op = buttonText;
                     break;
                 case ".":
-                    if (firstNum == "")
+                    if (op == "")
                     {
-                        firstNum += "0"; //can't forget leading zero
-                    }
-                    else if (firstNum.Contains(".")) //can't have two decimals in the same number
-                    {
+                        if (firstNum == "")
+                        {
+                            firstNum += "0"; //can't forget leading zero
+                        }
+                        else if (firstNum.Contains(".")) //can't have two decimals in the same number
+                        {
+                            answer = firstNum;
+                            break;
+                        }
+                        firstNum += buttonText;
                         answer = firstNum;
-                        break;
                     }
-                    firstNum += buttonText;
-                    answer = firstNum;
+                    else //an operator was selected, so new numbers refer to the second number input
+                    {
+                        if (secondNum == "")
+                        {
+                            secondNum += "0"; //can't forget leading zero
+                        }
+                        else if (secondNum.Contains(".")) //can't have two decimals in the same number
+                        {
+                            answer = secondNum;
+                            break;
+                        }
+                        secondNum += buttonText;
+                        answer = secondNum;
+                    }
                     break;
                 case "0":
-                    if (firstNum == "0" && buttonText == "0") //redundant zero clicked by the user
+                    if (op == "")
                     {
-                        answer = firstNum; //should be unnecessary
-                        break;
+                        if (firstNum == "0" && buttonText == "0") //redundant zero clicked by the user
+                        {
+                            answer = firstNum; //should be unnecessary
+                            break;
+                        }
+                        firstNum += buttonText;
+                        answer = firstNum;
                     }
-                    firstNum += buttonText;
-                    answer = firstNum;
+                    else //an operator was selected, so new numbers refer to the second number input
+                    {
+                        if (secondNum == "0" && buttonText == "0") //redundant zero clicked by the user
+                        {
+                            answer = secondNum; //should be unnecessary
+                            break;
+                        }
+                        secondNum += buttonText;
+                        answer = secondNum;
+                    }
                     break;
                 //could replace all the following with simply default case or could reserve default case for error checking
                 case "1":
@@ -188,12 +213,35 @@ public class Calc : MonoBehaviour
                 case "7":
                 case "8":
                 case "9":
-                    firstNum += buttonText;
-                    answer = firstNum;
+                    if (op == "")
+                    {
+                        if (firstNum == "0")
+                        {
+                            firstNum = buttonText;
+                        }
+                        else
+                        {
+                            firstNum += buttonText;
+                        }
+                        answer = firstNum;
+                    }
+                    else //an operator was selected, so new numbers refer to the second number input
+                    {
+                        if (secondNum == "0")
+                        {
+                            secondNum = buttonText;
+                        }
+                        else
+                        {
+                            secondNum += buttonText;
+                        }
+                        answer = secondNum;
+                    }
                     break;
             }
         }
 
         Debug.Log(answer);
+        output.text = answer;
     }
 }
