@@ -8,7 +8,6 @@ using UnityEngine.EventSystems;
 public class Calc : MonoBehaviour
 {
     public Text output;
-    public Text answerVariable;
     public Text firstNumVariable;
     public Text secondNumVariable;
     public Text rememberSecondNumVariable;
@@ -20,17 +19,25 @@ public class Calc : MonoBehaviour
 
     public void Start()
     {
-        answerVariable.text = "0";
+        output = GameObject.Find("OutputText").GetComponentInChildren<Text>();
+        firstNumVariable= GameObject.Find("firstNumVariable").GetComponentInChildren<Text>();
+        secondNumVariable = GameObject.Find("secondNumVariable").GetComponentInChildren<Text>();
+        rememberSecondNumVariable = GameObject.Find("rememberSecondNumVariable").GetComponentInChildren<Text>();
+        opVariable = GameObject.Find("opVariable").GetComponentInChildren<Text>();
+        rememberOpVariable = GameObject.Find("rememberOpVariable").GetComponentInChildren<Text>();
+        output.text = "0";
         firstNumVariable.text = "";
         secondNumVariable.text = "";
         rememberSecondNumVariable.text = "";
         opVariable.text = "";
         rememberOpVariable.text = "";
     }
+
+    //+/- registers again after hitting an operator, second number, and ENTER
     public void onClick()
     {
         string buttonText = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
-        string answer = answerVariable.text;
+        string answer = output.text;
         string firstNum = firstNumVariable.text;
         string secondNum = secondNumVariable.text;
         string rememberSecondNum = rememberSecondNumVariable.text;
@@ -120,7 +127,9 @@ public class Calc : MonoBehaviour
             answer = "0";
             firstNum = "";
             secondNum = "";
+            rememberSecondNum = ""; //should be unecessary
             op = "";
+            rememberOp = ""; //should be unecessary
         }
         else if (buttonText == "BACKSPACE")
         {
@@ -264,5 +273,10 @@ public class Calc : MonoBehaviour
 
         Debug.Log(answer);
         output.text = answer;
+        firstNumVariable.text = firstNum;
+        secondNumVariable.text = secondNum;
+        rememberSecondNumVariable.text = rememberSecondNum;
+        opVariable.text = op;
+        rememberOpVariable.text = rememberOp;
     }
 }

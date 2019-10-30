@@ -328,7 +328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -364,7 +363,7 @@ RectTransform:
   m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
   m_Children: []
   m_Father: {fileID: 1777983801}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -574,7 +573,7 @@ RectTransform:
   m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
   m_Children: []
   m_Father: {fileID: 1777983801}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -760,7 +759,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -872,7 +870,7 @@ RectTransform:
   m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
   m_Children: []
   m_Father: {fileID: 1777983801}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1058,7 +1056,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -1357,7 +1354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -1800,7 +1796,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 1255053123}
   firstNumVariable: {fileID: 2111185459}
   secondNumVariable: {fileID: 130624961}
   rememberSecondNumVariable: {fileID: 318920713}
@@ -1886,12 +1881,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 796455686}
-        m_MethodName: 
+      - m_Target: {fileID: 796455691}
+        m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1945,7 +1940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -2321,7 +2315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -2543,7 +2536,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -2688,7 +2680,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -2847,83 +2838,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218563229}
-  m_CullTransparentMesh: 0
---- !u!1 &1255053121
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1255053122}
-  - component: {fileID: 1255053124}
-  - component: {fileID: 1255053123}
-  m_Layer: 5
-  m_Name: answerVariable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1255053122
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255053121}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
-  m_Children: []
-  m_Father: {fileID: 1777983801}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -66.6, y: -11.5}
-  m_SizeDelta: {x: 87.2, y: 2.5}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1255053123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255053121}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.08050018, g: 0.6320754, b: 0.1699938, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 36
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 64
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1255053124
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255053121}
   m_CullTransparentMesh: 0
 --- !u!1 &1296276423
 GameObject:
@@ -3109,7 +3023,7 @@ RectTransform:
   m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
   m_Children: []
   m_Father: {fileID: 1777983801}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3397,7 +3311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -3619,7 +3532,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -3841,7 +3753,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -3955,7 +3866,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 802390301}
-  - {fileID: 1255053122}
   - {fileID: 2111185458}
   - {fileID: 130624960}
   - {fileID: 318920712}
@@ -4056,13 +3966,13 @@ MonoBehaviour:
   m_margin: {x: -217.87503, y: 7.512992, z: -90.4646, w: -27.547522}
   m_textInfo:
     textComponent: {fileID: 1777983802}
-    characterCount: 11
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -4100,7 +4010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -4311,7 +4220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -4456,7 +4364,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -4601,7 +4508,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -4746,7 +4652,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -4891,7 +4796,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -5036,7 +4940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -5253,7 +5156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   output: {fileID: 802390302}
-  answerVariable: {fileID: 0}
   firstNumVariable: {fileID: 0}
   secondNumVariable: {fileID: 0}
   rememberSecondNumVariable: {fileID: 0}
@@ -5289,7 +5191,7 @@ RectTransform:
   m_LocalScale: {x: 1.8437948, y: 1.8437948, z: 1.8437948}
   m_Children: []
   m_Father: {fileID: 1777983801}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
