@@ -37,14 +37,16 @@ public class Calc : MonoBehaviour
     {
         if (hovering)
         {
+            GetComponent<Image>().color = Color.red;
             timer += Time.deltaTime;
-            if (timer > 1.0)
+            if (timer > 2.0)
             {
                 //Debug.Log("CLICK");
                 timer = 0.0f;
                 add = true;
                 onClick();
                 add = false;
+                GetComponent<Image>().color = Color.white;
             }
         }
     }
@@ -319,6 +321,7 @@ public class Calc : MonoBehaviour
 
     public void MouseExit(BaseEventData eventData)
     {
+        GetComponent<Image>().color = Color.white;
         hovering = false;
         //Debug.Log("Mouse is exiting GameObject.");
     }
